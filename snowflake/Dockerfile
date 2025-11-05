@@ -1,0 +1,1 @@
+FROM containers.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake:latest

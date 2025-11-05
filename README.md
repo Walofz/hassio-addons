@@ -12,5 +12,6 @@ https://github.com/Walofz/hassio-addons
 
 ## Provided add-ons
 
-- cloudflare-ip-updater : Dynamic IP Updater for Cloudflare in hass.io
+- ~~cloudflare-ip-updater : Dynamic IP Updater for Cloudflare in hass.io~~
 - snowflake : Tor Proxy in hass.io
+- honeygain-pot : Honeygain Pot Auto Claim in hass.io

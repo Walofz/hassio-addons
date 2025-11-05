@@ -1,0 +1,15 @@
+name: "Honeygain Pot"
+version: "2.0.1"
+description: "Honeygain Pot Add-on for Home Assistant"
+slug: "honeygain_pot"
+codenotary: paitoon.j@tanukilab.net
+startup: application
+boot: auto
+arch:
+  - amd64
+options:
+  email: ''
+  password: ''
+schema:
+  email: str
+  password: str

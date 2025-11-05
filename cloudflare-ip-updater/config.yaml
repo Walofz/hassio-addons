@@ -1,0 +1,23 @@
+name: Cloudflare IP Updater
+version: 1.0.0
+description: Use a Cloudflare fo Update Public IP to update DNS A/AAAA records
+  automatically when your ISP changes your home IP address.
+slug: cloudflare_ip_updater
+codenotary: paitoon.j@tanukilab.net
+startup: system
+init: false
+boot: auto
+arch:
+- aarch64
+- amd64
+- armv7
+options:
+  zone: ''
+  host: ''
+  email: ''
+  api: ''
+schema:
+  zone: str
+  host: str
+  email: str
+  api: str

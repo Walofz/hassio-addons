@@ -14,4 +14,4 @@ https://github.com/Walofz/hassio-addons
 
 - ~~cloudflare-ip-updater : Dynamic IP Updater for Cloudflare in hass.io~~
 - snowflake : Tor Proxy in hass.io
-- [honeygain-pot](https://github.com/XternA/honeygain-reward) : Honeygain Pot Auto Claim in hass.io
+- ~~[honeygain-pot](https://github.com/XternA/honeygain-reward) : Honeygain Pot Auto Claim in hass.io~~

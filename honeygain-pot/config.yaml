@@ -4,6 +4,7 @@ description: "Honeygain Pot Add-on for Home Assistant Originally based on xterna
 slug: "honeygain_pot"
 codenotary: paitoon.j@tanukilab.net
 startup: application
+init: false
 boot: auto
 arch:
   - amd64

@@ -5,7 +5,6 @@ slug: "honeygain_pot"
 codenotary: paitoon.j@tanukilab.net
 startup: application
 boot: auto
-init: false
 arch:
   - amd64
 options:
@@ -13,4 +12,4 @@ options:
   PASSWORD: ''
 schema:
   EMAIL: str
-  PASSWORD: str
+  PASSWORD: password

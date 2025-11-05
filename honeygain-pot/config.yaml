@@ -1,5 +1,5 @@
 name: "Honeygain Pot"
-version: "2.0.1"
+version: "2.0.1-Modified"
 description: "Honeygain Pot Add-on for Home Assistant Originally based on xterna/honeygain-pot"
 slug: "honeygain_pot"
 codenotary: paitoon.j@tanukilab.net

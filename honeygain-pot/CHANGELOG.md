@@ -1,5 +1,8 @@
-## 2.0.1
+## 2.0.1-Modified
+### What's New:
+add run.sh
 
+## 2.0.1
 ### What’s New:
 Complete rewrite — no more headless browser or Puppeteer.
 Faster and lighter — improved performance and lower resource usage.

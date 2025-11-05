@@ -1,14 +1,15 @@
 name: "Tor Snowflake Proxy"
 version: "1.0.0"
-slug: "tor_snowflake_proxy"
 description: "Official Tor Snowflake Proxy"
+slug: "tor_snowflake_proxy"
 codenotary: paitoon.j@tanukilab.net
+startup: application
+boot: auto
+network_host: true
 arch:
   - aarch64
   - amd64
   - armv7
   - i386
-startup: application
-boot: auto
-network_host: true
-image: "containers.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake:latest"
+options: {}
+schema: {}

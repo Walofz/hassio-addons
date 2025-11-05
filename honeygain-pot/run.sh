@@ -8,7 +8,7 @@ CONFIG_PASSWORD=$(jq --raw-output '.password' /data/options.json)
 export EMAIL="${CONFIG_EMAIL}"
 export PASSWORD="${CONFIG_PASSWORD}"
 
-echo "Email successfully set: ${HG_EMAIL}"
+echo "Email successfully set: ${EMAIL}"
 echo "Password has been set (masked)."
 
 echo "Starting Honeygain Pot application..."

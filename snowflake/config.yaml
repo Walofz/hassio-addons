@@ -1,6 +1,6 @@
 name: "Tor Snowflake Proxy"
 version: "1.0.0"
-description: "Official Tor Snowflake Proxy"
+description: "Official Tor Snowflake Proxy Originally based on the torproject/snowflake image"
 slug: "tor_snowflake_proxy"
 codenotary: paitoon.j@tanukilab.net
 startup: application

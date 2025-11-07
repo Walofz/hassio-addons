@@ -1,0 +1,18 @@
+name: Honeygain
+version: 0.8.1
+description: Honeygain Add-on for Home Assistant Originally based on honeygain
+slug: honeygain
+codenotary: paitoon.j@tanukilab.net
+startup: application
+init: false
+boot: auto
+arch:
+  - amd64
+options:
+  EMAIL: ''
+  PASSWORD: ''
+  DEVICES: ''
+schema:
+  EMAIL: str 
+  PASSWORD: password
+  DEVICES: str

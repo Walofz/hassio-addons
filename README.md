@@ -13,5 +13,6 @@ https://github.com/Walofz/hassio-addons
 ## Provided add-ons
 
 - ~~cloudflare-ip-updater : Dynamic IP Updater for Cloudflare in hass.io~~
-- snowflake : Tor Proxy in hass.io
+- [snowflake](https://snowflake.torproject.org/) : Tor Proxy in hass.io
 - [honey-pot](https://github.com/XternA/honeygain-reward) : Honeygain Pot Auto Claim in hass.io
+- [octobot](https://github.com/Drakkar-Software/OctoBot) : Open source crypto trading bot

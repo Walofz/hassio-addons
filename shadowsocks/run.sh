@@ -13,4 +13,5 @@ for dns in $(jq -r '.dns_servers[]' $CONFIG_PATH); do
     DNS_ARGS="$DNS_ARGS --dns $dns"
 done
 
-exec ssserver -s "0.0.0.0:8388" -m "$METHOD" -k "$PASSWORD" $DNS_ARGS
+#exec ssserver -s "0.0.0.0:8388" -m "$METHOD" -k "$PASSWORD" $DNS_ARGS
+exec ssserver --help"

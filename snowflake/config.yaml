@@ -1,0 +1,13 @@
+name: "Snowflake Proxy"
+description: "Run a Snowflake proxy to help censored users connect to the Tor network."
+version: "1.0.0"
+slug: "snowflake_proxy"
+init: false
+arch:
+  - amd64
+startup: services
+boot: auto
+host_network: true
+image: "ghcr.io/walofz/snowflake-addon-amd64"
+options: {}
+schema: {}

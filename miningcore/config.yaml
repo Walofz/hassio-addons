@@ -1,0 +1,14 @@
+name: "Miningcore"
+description: "Miningcore Pool Software"
+version: "1.0.0"
+slug: "miningcore"
+init: false
+arch:
+  - amd64
+startup: application
+boot: auto
+host_network: true
+map:
+  - share:rw
+options: {}
+schema: {}

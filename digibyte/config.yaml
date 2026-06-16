@@ -1,0 +1,14 @@
+name: "DigiByte Node"
+description: "DigiByte Full Node for Solo Mining"
+version: "1.0.0"
+slug: "digibyte_node"
+init: false
+arch:
+  - amd64
+startup: application
+boot: auto
+host_network: true
+map:
+  - share:rw
+options: {}
+schema: {}

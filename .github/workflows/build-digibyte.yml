@@ -1,4 +1,4 @@
-name: Build and Publish Auroracoin Add-on
+name: Build and Publish DigiByte Add-on
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - 'auroracoin/**'
+      - 'digibyte/**'
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-      
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -36,6 +36,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./auroracoin
+          context: ./digibyte
           push: true
-          tags: ghcr.io/${{ env.OWNER_LC }}/auroracoin-addon-amd64:latest
+          tags: ghcr.io/${{ env.OWNER_LC }}/digibyte-addon-amd64:latest

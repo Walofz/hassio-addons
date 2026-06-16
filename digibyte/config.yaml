@@ -10,5 +10,6 @@ boot: auto
 host_network: true
 map:
   - share:rw
+image: "ghcr.io/walofz/digibyte-addon-amd64"
 options: {}
 schema: {}

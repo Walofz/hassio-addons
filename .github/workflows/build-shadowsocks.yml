@@ -38,4 +38,4 @@ jobs:
           context: ./shadowsocks
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER_LC }}/shadowsocks-addon-amd64:1.0.0
+            ghcr.io/${{ env.OWNER_LC }}/shadowsocks-addon-amd64:1.0.1

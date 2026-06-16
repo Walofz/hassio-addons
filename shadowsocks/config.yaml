@@ -1,6 +1,6 @@
 name: "Shadowsocks Server"
 description: "A fast tunnel proxy that helps you bypass strict firewalls."
-version: "1.0.0"
+version: "1.0.1"
 slug: "shadowsocks_server"
 init: false
 arch:
@@ -14,6 +14,11 @@ image: "ghcr.io/walofz/shadowsocks-addon-amd64"
 options:
   password: "your_secure_password"
   method: "aes-256-gcm"
+  dns_servers:
+    - "1.1.1.1"
+    - "8.8.8.8"
 schema:
   password: str
   method: list(aes-256-gcm|chacha20-ietf-poly1305|xchacha20-ietf-poly1305)
+  dns_servers:
+    - str

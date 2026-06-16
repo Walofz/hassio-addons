@@ -38,4 +38,4 @@ jobs:
         with:
           context: ./digibyte
           push: true
-          tags: ghcr.io/${{ env.OWNER_LC }}/digibyte-addon-amd64:latest
+          tags: ghcr.io/${{ env.OWNER_LC }}/digibyte-addon-amd64:8.26.2

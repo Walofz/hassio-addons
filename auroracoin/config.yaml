@@ -1,6 +1,6 @@
 name: "Auroracoin Node"
 description: "Auroracoin Full Node for Solo Mining"
-version: "1.0.0"
+version: "2022.06.1.0"
 slug: "auroracoin_node"
 init: false
 arch:

@@ -1,6 +1,6 @@
 name: "DigiByte Node"
 description: "DigiByte Full Node for Solo Mining"
-version: "1.0.0"
+version: "8.26.2"
 slug: "digibyte_node"
 init: false
 arch:

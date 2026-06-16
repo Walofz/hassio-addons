@@ -38,4 +38,4 @@ jobs:
         with:
           context: ./auroracoin
           push: true
-          tags: ghcr.io/${{ env.OWNER_LC }}/auroracoin-addon-amd64:latest
+          tags: ghcr.io/${{ env.OWNER_LC }}/auroracoin-addon-amd64:2022.06.1.0

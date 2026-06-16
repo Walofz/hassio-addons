@@ -14,11 +14,8 @@ image: "ghcr.io/walofz/shadowsocks-addon-amd64"
 options:
   password: "your_secure_password"
   method: "aes-256-gcm"
-  dns_servers:
-    - "1.1.1.1"
-    - "8.8.8.8"
+  dns_provider: "system"
 schema:
   password: str
   method: list(aes-256-gcm|chacha20-ietf-poly1305|xchacha20-ietf-poly1305)
-  dns_servers:
-    - str
+  dns_provider: list(system|cloudflare|google|quad9)

@@ -6,12 +6,13 @@ CONFIG_PATH=/data/options.json
 # ดึงค่าจากหน้าต่าง Configuration
 PASSWORD=$(jq --raw-output '.password' $CONFIG_PATH)
 METHOD=$(jq --raw-output '.method' $CONFIG_PATH)
+DNS_PROVIDER=$(jq --raw-output '.dns_provider' $CONFIG_PATH)
 
-# วนลูปอ่านค่า DNS แบบ Multi DNS แล้วสร้างพารามิเตอร์
-DNS_ARGS=""
-for dns in $(jq -r '.dns_servers[]' $CONFIG_PATH); do
-    DNS_ARGS="$DNS_ARGS --dns $dns"
-done
+echo "Starting Shadowsocks Server with method: $METHOD and DNS: $DNS_PROVIDER"
 
-#exec ssserver -s "0.0.0.0:8388" -m "$METHOD" -k "$PASSWORD" $DNS_ARGS
-exec ssserver --help
+# ตรวจสอบเงื่อนไข: ถ้าเลือก system ไม่ต้องใส่พารามิเตอร์ --dns (ปล่อยให้ระบบจัดการเอง)
+if [ "$DNS_PROVIDER" = "system" ]; then
+    exec ssserver -s "0.0.0.0:8388" -m "$METHOD" -k "$PASSWORD"
+else
+    exec ssserver -s "0.0.0.0:8388" -m "$METHOD" -k "$PASSWORD" --dns "$DNS_PROVIDER"
+fi

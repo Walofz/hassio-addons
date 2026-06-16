@@ -1,0 +1,36 @@
+name: Build and Publish Auroracoin Add-on
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'auroracoin/**' # ทำงานเฉพาะเมื่อมีการแก้ไขไฟล์ในโฟลเดอร์นี้
+  workflow_dispatch: # เพิ่มปุ่มกดสั่ง Build เองด้วยมือ
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }} # ไม่ต้องสร้างเอง GitHub มีให้ในตัวเลย
+
+      - name: Convert GitHub repository owner to lowercase
+        id: lowercase_owner
+        run: |
+          echo "OWNER_LC=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./auroracoin
+          push: true
+          tags: ghcr.io/${{ env.OWNER_LC }}/auroracoin-addon-amd64:latest

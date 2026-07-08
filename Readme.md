@@ -8,6 +8,7 @@
 * **[Auroracoin Node](auroracoin/)**: ระบบ Full Node พร้อมเปิด ZMQ สำหรับเชื่อมต่อ Miningcore โหลดจาก `ghcr.io/walofz/auroracoin-addon-amd64`
 * **[DigiByte Node](digibyte/)**: ระบบ Full Node v8.26.2 พร้อมเปิด ZMQ โหลดจาก `ghcr.io/walofz/digibyte-addon-amd64`
 * **[Miningcore](miningcore/)**: ระบบ Mining Pool Software ดึงรายการเหรียญจาก GitHub อัตโนมัติ
+* **[Go Solopool](go-solopool/)**: ระบบ Solopool เขียนด้วย Go การทำงานคล้าย ckpool
 
 ### Network & Security
 * **[Shadowsocks Server](shadowsocks/)**: ระบบ Proxy อุโมงค์ข้อมูลเพื่อความปลอดภัย รองรับการตั้งค่ารหัสผ่านและวิธีเข้ารหัสผ่านหน้า Add-on โหลดจาก `ghcr.io/walofz/shadowsocks-addon-amd64`

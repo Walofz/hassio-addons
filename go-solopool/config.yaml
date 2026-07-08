@@ -1,0 +1,33 @@
+name: "Solo Proxy"
+description: "Solo mining proxy service"
+version: "1.0.5-1"
+slug: "soloproxy"
+init: false
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+host_network: true
+options:
+  TZ: "Asia/Bangkok"
+  RPC_URL: "http://127.0.0.1:13031"
+  RPC_USER: "your_rpc_username"
+  RPC_PASS: "your_rpc_password"
+  ZMQ_URL: "tcp://127.0.0.1:28332"
+  STRATUM_PORT: ":3333"
+  WEB_PORT: ":8080"
+  FIXED_DIFF: 10000
+  DISCORD_WEBHOOK_URL: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+  WALLET_ADDRESS: "wallet_legacy_here"
+schema:
+  TZ: str
+  RPC_URL: str
+  RPC_USER: str
+  RPC_PASS: password
+  ZMQ_URL: str
+  STRATUM_PORT: str
+  WEB_PORT: str
+  FIXED_DIFF: int
+  DISCORD_WEBHOOK_URL: str
+  WALLET_ADDRESS: str

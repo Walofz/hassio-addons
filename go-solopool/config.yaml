@@ -1,6 +1,6 @@
 name: "Solo Proxy"
 description: "Solo mining proxy service"
-version: "1.0.5-1"
+version: "1.0.6"
 slug: "soloproxy"
 init: false
 arch:

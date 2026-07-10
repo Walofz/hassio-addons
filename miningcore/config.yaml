@@ -1,6 +1,6 @@
 name: "Miningcore"
 description: "Miningcore Pool Software"
-version: "1.0.0"
+version: "1.0.1"
 slug: "miningcore"
 init: false
 arch:
@@ -10,5 +10,10 @@ boot: auto
 host_network: true
 map:
   - share:rw
-options: {}
-schema: {}
+options:
+  custom_hosts:
+    - "192.168.1.50 mail.tanukilab.net"
+    - "192.168.1.50 tanukilab.net"
+schema:
+  custom_hosts:
+    - str

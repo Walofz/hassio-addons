@@ -5,6 +5,7 @@ slug: "snowflake_proxy"
 init: false
 arch:
   - amd64
+  - aarch64
 startup: services
 boot: auto
 host_network: true

@@ -6,7 +6,7 @@
 
 ### Crypto & Mining
 * **[Auroracoin Node](auroracoin/)**: ระบบ Full Node พร้อมเปิด ZMQ สำหรับเชื่อมต่อ Miningcore โหลดจาก `ghcr.io/walofz/auroracoin-addon-amd64`
-* **[DigiByte Node](digibyte/)**: ระบบ Full Node v8.26.2 พร้อมเปิด ZMQ โหลดจาก `ghcr.io/walofz/digibyte-addon-amd64`
+* **[DigiByte Node](digibyte/)**: ระบบ Full Node พร้อมเปิด ZMQ โหลดจาก `ghcr.io/walofz/digibyte-addon-amd64`
 * **[Miningcore](miningcore/)**: ระบบ Mining Pool Software ดึงรายการเหรียญจาก GitHub อัตโนมัติ
 * **[Go Solopool](go-solopool/)**: ระบบ Solopool เขียนด้วย Go การทำงานคล้าย ckpool
 
